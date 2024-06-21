@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav flex container">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="assets/wb-removebg-preview.png" alt="company-logo">
+            </a>
+            <div class="main-topic">
+                <ul class="flex">
+                    <li class="nav-link-items hover" id="ipl" onclick="onNavClick('ipl')">IPL</li>
+                    <li class="nav-link-items hover" id="finance" onclick="onNavClick('finance')">Finance</li>
+                    <li class="nav-link-items hover" id="politics" onclick="onNavClick('Geopolitics')">Geopolitics</li>
+                    <li class="nav-link-items hover" id="elections" onclick="onNavClick('Indian Elections 2024')">Elections</li>
+                    <li class="nav-link-items hover" id="trending" onclick="onNavClick('Trending News')">Trending</li>
+                    <!-- <li class="nav-link-items hover" id="hots" onclick="onNavClick('Hot topics')">Hots</li> -->
+                    <li class="nav-link-items hover" id="israel" onclick="onNavClick('Israel war')">Israel</li>
+                    <li class="nav-link-items hover" id="israel" onclick="onNavClick('Technology')">Technology</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="e.g., Science" class="search-input" id="search-input">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="card-container container flex" id="cards-container">
+
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://unsplash.it/400/200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 class="card-content-heading" id="card-content-heading">This is the title</h3>
+                <h6 class="card-content-source" id="card-content-source">Lorem ipsum dolor sit</h6>
+                <p class="card-content-desc" id="card-content-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa labore corporis incidunt eaque, fuga itaque? </p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
